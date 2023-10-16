@@ -1,16 +1,304 @@
-### Hi there 👋
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CleanBot</title>
 
-<!--
-**Yassine10293847556/Yassine10293847556** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+</head>
+<body>
+    <head>
+    <div class="menu">
+        <img id="imagenMenu" src="file:///C:/Users/YassineBekkaoui/Pictures/Saved%20Pictures/Afegeix%20un%20subt%C3%ADtol.png" alt="Tu imagen">
+        <a href="Robot limpiador.html">Inici</a>
+        <a href="informacion.html">Información</a>
+        <a href="caracteristicas.html">Características</a>
+        <a href="beneficios.html">Tenda</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+</head>
+</body>
 
-Here are some ideas to get you started:
+<br>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+     <h4>
+                Et presentem el revolucionari CelanBot! Aquest no és un simple robot aspirador, és el teu assistent de neteja personal. Equipat amb un braç mecanitzat d'última generació, el CleanBot no només aspira els teus terres, sinó que també pot recollir objectes, netejar superfícies elevades i arribar a aquests racons difícils.
+            </h4>
+
+<head>
+  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .video {
+            flex-basis: 70%;
+            text-align: center;
+            border-top: white;
+            border-left: #f4f4f4;
+            border-right: white;
+            border-style: initial;
+            
+        }
+        .title {
+            flex-basis: 30%;
+            display: flex;
+            align-items: center; /* Alinea verticalmente */
+            justify-content: center; /* Alinea horizontalmente */
+            font-size: 2em;
+            color: #333;
+            border-left: 3px solid #333;
+            padding-left: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="video">
+            <iframe width="560" height="315" src="file:///C:/Users/YassineBekkaoui/Pictures/Screenshots/CleanBot%20%E2%80%90.mp4"></iframe>
+        </div>
+        <div class="title">
+            <h1 id="dynamicTitle">CelanBot</h1>
+        </div>
+    </div>
+</body>
+<script>
+    // Aquí puedes agregar tu código JavaScript
+    // Por ejemplo, puedes cambiar el título cada cierto tiempo
+    const titles = ['CleanBot', 'YOUR ROBOT', 'YOUR DESICION'];
+    let index = 0;
+
+    setInterval(() => {
+        document.getElementById('dynamicTitle').innerText = titles[index];
+        index = (index + 1) % titles.length;
+    }, 3000);
+</script>
+
+
+        
+<style>
+#menu {
+  display: flex;
+  align-items: center;
+}
+
+
+#imagenMenu {
+  float: left;
+  width: 50px; 
+  height: 50px; 
+  margin-right: 10px; 
+}
+
+.elementoMenu {
+  margin-right: 10px; 
+}
+</style>
+</head>
+
+<body>
+ 
+<style>
+
+body {
+            background-image: url('');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        
+        .menu {
+            background-color: #000000;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .menu a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: black;
+
+        }
+
+.section-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f5f5f5;
+}
+
+.menu {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.menu a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu a {
+
+    transition: color 0.3s ease;
+}
+
+.menu a :hover {
+ color: #315b92;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    padding-top: 20px;
+}
+
+section {
+    margin: 20px;
+}
+
+.section-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+h2 {
+    color: #000000;
+    margin: 20px;
+}
+
+h3 {
+    color: #000000;
+    margin: 25px;
+}
+
+h1, h2 {
+    transition: color 0.9s ease;
+}
+
+h1:hover, h2:hover {
+    color: #468be4;
+    
+}
+
+
+.menu a {
+    transition: border-left 0.5s ease;
+    padding-left: 10px;
+}
+
+.menu a:hover {
+    border-left: 2px solid #315b92;
+}
+
+img {
+      border: 5px solid #1890b4; /* Borde verde */
+      border-radius: 10px; /* Bordes redondeados */
+      box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Sombra alrededor de la imagen */
+      transition: transform .2s; /* Animación */
+    }
+    
+    img:hover {
+      transform: scale(1.1); /* Zoom al pasar el ratón por encima */
+    }
+
+    div {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 20px;
+    }
+
+    h4 {
+        color: #000000;
+        margin: 2px;
+    }
+
+    h4 {
+    
+            border: 1px solid rgb(54, 57, 218);
+            padding: 10px;
+            margin: 20px;
+            border-radius: 10px;
+       }  
+    
+    ul {
+        transition: color 0.5s ease; 
+    }
+
+    ul:hover {
+        color: #1890b4;
+    }
+
+    ul li {
+        transition: color 1.9s ease; 
+    }
+
+    ul li:hover {
+        color: #1637c9;
+    }
+
+    ul li {
+            font-size: 16px;
+            transition: font-size 0.3s ease;
+        }
+
+        ul li:hover {
+            font-size: 18px;
+        }
+
+</style>
+
+<br>
+
+<body>
+    
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f4;
+          margin: 0;
+          padding: 0;
+        }
+        
+        h4 {
+          color: #333;
+          font-size: 20px;
+          text-align: center;
+          margin: 20px;
+          font-weight: bold; /* Nuevo */
+        }
+      
+        </style>
+        
+        <body>
+        
+       
+        
+        
+        <div>
+            
+                  <h1> "Imagina tornar a casa després d'un llarg dia de feina i trobar casa impecablement neta. El CleanBot fa que això sigui possible! No perdis més temps i energia en tasques de neteja. Deixa que el CleanBot se n'encarregui per tu. Fes la teva vida més fàcil amb el CleanBot!" </h1>
+                
+            
+        </div>
+            
+        </body>
+        
