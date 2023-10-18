@@ -200,13 +200,17 @@ function getResponse() {
   var output = "";
 
   if (input.toLowerCase().includes("hola")) {
-    output = "¡Hola! ¿Cómo puedo ayudarte hoy?";
+    output = "Hola! En què puc ajudar-te?";
   } else if (input.toLowerCase().includes("cómo te llamas")) {
-    output = "Soy BotAsistent, tu asistente virtual.";
-} else if (input.toLowerCase().includes("cuanto cuesta")) {
-    output = "Nuestro CleanBot como en nuestra sección de compras puede bariar entre los 900 y 1.200 €";
-} else if (input.toLowerCase().includes("¿cuanto cuesta?")) {
-    output = "Nuestro CleanBot como en nuestra sección de compras puede bariar entre los 900 y 1.200 €";
+    output = "Soc CleanAsistent, el teu assistent virtual.";
+} else if (input.toLowerCase().includes("quant costa")) {
+    output = "El nostre CleanBot com en la nostra secció de compres pot bariar entre els 900 i 1.200 €. Pories menciónar un en especific?";
+} else if (input.toLowerCase().includes("quant val")) {
+    output = "Nuestro CleanBot como en nuestra sección de compras puede bariar entre los 900 y 1.200 €. Pories menciónar un en especific?";
+} else if (input.toLowerCase().includes("quant costa?")) {
+    output = "El nostre CleanBot com en la nostra secció de compres pot bariar entre els 900 i 1.200 €. Pories menciónar un en especific?";
+} else if (input.toLowerCase().includes("quant val?")) {
+    output = "Nuestro CleanBot como en nuestra sección de compras puede bariar entre los 900 y 1.200 €. Pories menciónar un en especific?";
   } else if (input.toLowerCase().includes("como te llamas")) {
     output = "Soy BotAsistent, tu asistente virtual.";
   } else {
