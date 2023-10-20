@@ -215,6 +215,21 @@ function getResponse() {
     output = "El nostre Green CleanBot te un preu de 1.500€";
   } else if (input.toLowerCase().includes("cleanbot")) {
     output = "El nostre CleanBot te un preu de 900€";
+  }else if (input.toLowerCase().includes("què és el cleanbot")) {
+    output = "El CleanBot és una solució innovadora que manté la teva casa neta i ordenada automàticament. Pot recollir la brossa i ordenar els objectes a casa teva.";
+  } else if (input.toLowerCase().includes("com funciona el cleanbot")) {
+    output = "El CleanBot utilitza un sistema de sensors per detectar i recollir objectes del terra i col·locar-los al seu lloc original. També pot reorganitzar la teva casa per donar-li un estil nou.";
+  } else if (input.toLowerCase().includes("el cleanbot es pot controlar des d'un telèfon mòbil")) {
+    output = "Sí, el CleanBot es pot integrar amb aplicacions mòbils, cosa que et permet controlar-lo i programar-lo des del teu telèfon.";
+  } else if (input.toLowerCase().includes("com es recarrega el cleanbot")) {
+    output = "El CleanBot funciona amb una bateria recarregable. Quan la bateria s'esgota, el CleanBot torna automàticament a la seva base de càrrega.";
+  } else if (input.toLowerCase().includes("el cleanbot té alguna funció de seguretat")) {
+    output = "Sí, el CleanBot té una càmera de videovigilància incorporada que captura tot el que fa i pot detectar intrusos quan no estàs a casa.";
+  } else if (input.toLowerCase().includes("com interactua l'usuari amb el cleanbot")) {
+    output = "L'usuari pot interactuar amb el CleanBot a través d'un micròfon incorporat. El CleanBot està vinculat a la xarxa i utilitza intel·ligència artificial per respondre a les sol·licituds de l'usuari.";
+  } else {
+    output = "Ho sento, no ho he entès. Podries repetir-ho, si us plau?";
+  }
   } else {
     output = "Lo siento, no entendí eso. ¿Podrías repetirlo, por favor?";
   }
