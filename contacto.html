@@ -204,14 +204,14 @@ function getResponse() {
   } else if (input.includes("nom")) {
     output = "Soc CleanAsistent, el teu assistent virtual.";
   } else if (input.includes("cost") || input.includes("val")) {
-    output = "CleanBot com en la nostra secció de compres pot variar entre els 900 i 1.500 €. Podries mencionar un en específic?";
+    output = "CleanBot com en la nostra secció de compres pot bariar entre els 900 i 1.500 €. Pories menciónar un en especific?";
   } else if (input.includes("minimalist")) {
     output = "El nostre CleanBot Minimalist te un preu de 1.200€";
   } else if (input.includes("green")) {
     output = "El nostre Green CleanBot te un preu de 1.500€";
   } else if (input.includes("cleanbot")) {
     output = "El nostre CleanBot te un preu de 900€";
-  }else if (input.includes("què és") || input.includes("que es")) {
+  } else if (input.includes("què és") || input.includes("que es")) {
     output = "El CleanBot és una solució innovadora que manté la teva casa neta i ordenada automàticament. Pot recollir la brossa i ordenar els objectes a casa teva.";
   } else if (input.includes("que fa") || input.includes("funcionament") || input.includes("funcions") || input.includes("funciona")) {
     output = "El CleanBot utilitza un sistema de sensors per detectar i recollir objectes del terra i col·locar-los al seu lloc original. També pot reorganitzar la teva casa per donar-li un estil nou.";
@@ -223,6 +223,10 @@ function getResponse() {
     output = "Sí, el CleanBot té una càmera de videovigilància incorporada que captura tot el que fa i pot detectar intrusos quan no estàs a casa.";
   } else if (input.includes("interactua") && input.includes("usuari")) {
     output = "L'usuari pot interactuar amb el CleanBot a través d'un micròfon incorporat o amb la propia App. El CleanBot està vinculat a la xarxa i utilitza intel·ligència artificial per respondre a les sol·licituds de l'usuari.";
+  } else if (input === "quantes rodes te?") {
+    output = "El CleanBot té incorporades 2 rodes oruga per les quals millora el seu desplaçament per la teva llar.";
+  } else if (input === "cuanto tarda en llegar?") {
+    output = "Des de l'empresa de fabricació fins al teu destí podria trigar 3 dies en arribar.";
   } else {
     output = "Ho sento, no ho he entès. Podries repetir-ho, si us plau?";
   }
@@ -247,6 +251,7 @@ function getResponse() {
   typeWriter();
 }
 </script>
+
 
 
 
