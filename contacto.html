@@ -223,9 +223,9 @@ function getResponse() {
     output = "Sí, el CleanBot té una càmera de videovigilància incorporada que captura tot el que fa i pot detectar intrusos quan no estàs a casa.";
   } else if (input.includes("interactua") && input.includes("usuari")) {
     output = "L'usuari pot interactuar amb el CleanBot a través d'un micròfon incorporat o amb la propia App. El CleanBot està vinculat a la xarxa i utilitza intel·ligència artificial per respondre a les sol·licituds de l'usuari.";
-  } else if (input === "quantes rodes te?") {
+  } else if (input.includes("rodes")) {
     output = "El CleanBot té incorporades 2 rodes oruga per les quals millora el seu desplaçament per la teva llar.";
-  } else if (input === "cuanto tarda en llegar?") {
+  } else if (input.includes("enviar") || input.includes("comanda") || input.includes("trigar")) {
     output = "Des de l'empresa de fabricació fins al teu destí podria trigar 3 dies en arribar.";
   } else {
     output = "Ho sento, no ho he entès. Podries repetir-ho, si us plau?";
