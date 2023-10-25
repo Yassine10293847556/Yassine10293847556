@@ -227,7 +227,33 @@ function getResponse() {
     output = "El CleanBot té incorporades 2 rodes oruga per les quals millora el seu desplaçament per la teva llar.";
   } else if (input.includes("envio") || input.includes("comanda") || input.includes("trigar") || input.includes("triga")) {
     output = "Des de l'empresa de fabricació fins al teu destí podria trigar 3 dies en arribar.";
-  } else {
+      else if (input.includes("garantia") || input.includes("garantía")) {
+    output = "El CleanBot ve amb una garantia de 2 anys.";
+  } else if (input.includes("pes")) {
+    output = "El CleanBot pesa aproximadament 3.5 kg.";
+  } else if (input.includes("dimensions") || input.includes("mida")) {
+    output = "El CleanBot té unes dimensions de 39 cm d'ample, 60 cm de llarg, longitud del braç mecànic, 60 cm (extensible).";
+  } else if (input.includes("soroll")) {
+    output = "El CleanBot té un nivell de soroll de menys de 60 dB.";
+  } else if (input.includes("neteja") && input.includes("temps")) {
+    output = "El CleanBot pot netejar contínuament durant fins a 120 minuts abans de necessitar recarregar-se.";
+  } else if (input.includes("filtre") || input.includes("filtres")) {
+    output = "El CleanBot utilitza un sistema de filtració HEPA per atrapar les partícules més petites.";
+  } else if (input.includes("bateria") && input.includes("vida")) {
+    output = "La bateria del CleanBot té una vida útil d'aproximadament 3 anys.";
+  } else if (input.includes("recanvi") || input.includes("peces")) {
+    output = "Oferim peces de recanvi per al CleanBot a la nostra pàgina web.";
+  } else if (input.includes("manual") || input.includes("instruccions")) {
+    output = "Pots descarregar el manual d'instruccions del CleanBot des del nostre lloc web.";
+  } else if (input.includes("atenció al client") || input.includes("suport")) {
+    output = "Oferim suport al client 24/7 a través del nostre lloc web i la nostra línia telefònica.";
+  } else if (input.includes("devolució") || input.includes("retorn")) {
+    output = "Acceptem devolucions dins dels primers 30 dies després de la compra.";
+  } else if (input.includes("garantia") && input.includes("extensió")) {
+    output = "Oferim una extensió de garantia per un cost addicional.";
+  
+
+} else {
     output = "Ho sento, no ho he entès. Podries repetir-ho, si us plau?";
   }
 
