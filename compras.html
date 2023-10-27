@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+     body {
+            font-family: Arial, sans-serif;
+            background-color: navy;
+            color: white;
+            padding: 20px;
+        }
+        .product {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        .product img {
+            width: 200px;
+        }
+        .product-info {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+        button {
+            background-color: lightblue;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: dodgerblue;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li img {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Compra un robot</h1>
+
+    <div class="product">
+        <img src="ruta/a/la/imagen/del/robot.jpg" alt="Robot">
+        <div class="product-info">
+            <h2>Nombre del robot</h2>
+            <p>Descripción del robot.</p>
+            <label for="quantity">Cantidad:</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" max="10"><br>
+            <button>Añadir al carrito</button>
+        </div>
+    </div>
+
+    <h2>Información de pago</h2>
+    <p>Aceptamos los siguientes métodos de pago:</p>
+    <ul>
+        <li><img id="paypal" src="https://th.bing.com/th?id=OIF.6GQN9Px4H%2fKe4EejJ1A%2bLw&pid=ImgDet&rs=1" alt="PayPal" style="width: 90px; height: 50px;display: inline;"></li>
+        <li><img id="bbva" src="https://www.bbva.com/wp-content/uploads/2019/04/Logo-BBVA.jpg" alt="BBVA"style="width: 90px; height: 50px;display: inline;"></li>
+        <li><img id="bizum" src="https://www.tuexpertomovil.com/wp-content/uploads/2020/12/bizum.jpg" alt="Bizum"style="width: 90px; height: 50px; display: inline;"></li>
+        <li><img id="mastercard" src="https://brandemia.org/sites/default/files/sites/default/files/mastercard_pentagram_press-4.jpg" alt="Mastercard" style="width: 90px; height: 50px; display: inline;"></li>
+    </ul>
+
+    <script>
+    document.getElementById("paypal").addEventListener("click", function() {
+        alert("Has seleccionado PayPal como tu método de pago.");
+    });
+
+    document.getElementById("bbva").addEventListener("click", function() {
+        alert("Has seleccionado BBVA como tu método de pago.");
+    });
+
+    document.getElementById("bizum").addEventListener("click", function() {
+        alert("Has seleccionado Bizum como tu método de pago.");
+    });
+
+    document.getElementById("mastercard").addEventListener("click", function() {
+        alert("Has seleccionado Mastercard como tu método de pago.");
+    });
+    </script>
+
+    <h2>Información de envío</h2>
+    <p>Selecciona tu opción de envío:</p>
+    <button id="standard">Envío estándar (3 días, 3,99€)</button>
+    <button id="express">Envío exprés (al día siguiente, 6,99€)</button>
+
+    <script>
+    document.getElementById("standard").addEventListener("click", function() {
+        alert("Has seleccionado el envío estándar. Tu pedido llegará en 3 días y costará 3,99€.");
+    });
+
+    document.getElementById("express").addEventListener("click", function() {
+        alert("Has seleccionado el envío exprés. Tu pedido llegará al día siguiente y costará 6,99€.");
+    });
+    </script>
+
+    <h2>Realizar pedido</h2>
+    <form action="/ruta/a/tu/servidor" method="post">
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="address">Dirección:</label><br>
+        <input type="text" id="address" name="address"><br>
+        <label for="postcode">Código postal:</label><br>
+        <input type="text" id="postcode" name="postcode"><br>
+        <label for="bank">Número de cuenta bancaria:</label><br>
+        <input type="text" id="bank" name="bank"><br>
+        <input type="submit" value="Realizar pedido">
+    </form>
+
+</body>
+</html>
